@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <SearchView
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/avatar_size_small"
+                android:background="@drawable/shadow_border_radius_box"
+                android:id="@+id/search_bar"
+                android:layout_marginBottom="50px"
+                android:clickable="true"/>
+
+        </LinearLayout>
+        <TextView
+            android:text="Your Newfeeds"
+            android:textAlignment="center"
+            android:textSize="50px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/content_container_linearlayout"
+            android:orientation="vertical"
+            android:layout_marginTop="50px"
+            android:paddingTop="50px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/content_container">
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

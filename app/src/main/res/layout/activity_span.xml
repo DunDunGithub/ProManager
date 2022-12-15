@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:justifyContent="center"
+    app:alignItems="center"
+    android:paddingTop="40px"
+    android:paddingBottom="40px"
+    android:paddingLeft="25px"
+    android:paddingRight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.flexbox.FlexboxLayout
+        app:flexDirection="column"
+        android:background="@drawable/border_radius_stroke_box"
+        android:paddingLeft="80px"
+        android:paddingRight="80px"
+        android:paddingTop="70px"
+        android:paddingBottom="70px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/hoster_textview"
+            android:textColor="@color/white_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/activity_header_textview"
+            android:textSize="60px"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:alignItems="center">
+            <ImageView
+                android:layout_margin="10px"
+                android:src="@drawable/timer_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/activity_deadline_textview"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/white"
+                android:text="Responsibility: "
+                android:layout_width="wrap_content"
+                android:layout_marginRight="20px"
+                android:layout_height="wrap_content"/>
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/respon_container_layout"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    android:background="@drawable/avatar"
+                    android:layout_width="@dimen/avatar_size_tiny"
+                    android:layout_height="@dimen/avatar_size_tiny"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+</com.google.android.flexbox.FlexboxLayout>
